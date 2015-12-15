@@ -23,7 +23,7 @@ class HomePage
     return test_found
   end
 
-  def date_order_test       # Date Format = MM/DD/YY  --array indices([] = /)--> 01[2]34[5]67
+  def date_order_test       # Date Format = MM/DD/YY  --> array indices([] = /) --> 01[2]34[5]67
     is_ordered = false
     for i in (1..(self.post_date_list_elements.length - 1))
       if (self.post_date_list_elements[i].text[0,1] > 

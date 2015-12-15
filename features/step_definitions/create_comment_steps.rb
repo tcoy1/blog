@@ -6,7 +6,7 @@ include PageObject::PageFactory
 
 When /^I am looking at a post$/ do
   visit_page(HomePage) do |page|
-    page.post_link_elements[0]#.click
+    page.post_link_elements[0].click
   end
 end
 
